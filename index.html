@@ -16,41 +16,220 @@
             </p>
         </header>
         
-        <form id="quiz-form">
+        <form id="quiz-form" action="https://formspree.io/f/mwpwggba" method="POST">
             
             <div id="questions-container">
                 
                 <div class="question-block">
-                    <label class="question-label">ПИТАННЯ 1: LOREM IPSUM DOLOR SIT AMET?</label>
+                    <label class="question-label">1. ВАШ ВІК:</label>
                     <div class="options">
-                        <label><input type="radio" name="q_fish_1" value="a"> Варіант відповіді A</label>
-                        <label><input type="radio" name="q_fish_1" value="b"> Варіант відповіді B (трохи довший)</label>
-                        <label><input type="radio" name="q_fish_1" value="c"> Варіант відповіді C</label>
+                        <label><input type="radio" name="q1_age" value="under_18"> ДО 18</label>
+                        <label><input type="radio" name="q1_age" value="18_24"> 18-24</label>
+                        <label><input type="radio" name="q1_age" value="25_34"> 25-34</label>
+                        <label><input type="radio" name="q1_age" value="35_44"> 35-44</label>
+                        <label><input type="radio" name="q1_age" value="45_plus"> 45+</label>
                     </div>
                 </div>
 
                 <div class="question-block">
-                    <label class="question-label">ПИТАННЯ 2: CONSECTETUR ADIPISCING ELIT?</label>
+                    <label class="question-label">2. ВАША СТАТЬ:</label>
                     <div class="options">
-                        <label><input type="radio" name="q_fish_2" value="a"> Перший вибір</label>
-                        <label><input type="radio" name="q_fish_2" value="b"> Другий вибір</label>
+                        <label><input type="radio" name="q2_gender" value="male"> ЧОЛОВІЧА</label>
+                        <label><input type="radio" name="q2_gender" value="female"> ЖІНОЧА</label>
+                        <label><input type="radio" name="q2_gender" value="other"> ІНШЕ</label>
                     </div>
                 </div>
 
                 <div class="question-block">
-                    <label class="question-label">ПИТАННЯ 3: QUISQUE VELIT LIGULA (ТЕПЕР ТІЛЬКИ 1)?</label>
+                    <label class="question-label">3. ВАША ОСНОВНА СФЕРА ДІЯЛЬНОСТІ:</label>
                     <div class="options">
-                        <label><input type="radio" name="q_fish_3" value="1"> ОБЕРІТЬ ЦЕЙ (РАДІО)</label>
-                        <label><input type="radio" name="q_fish_3" value="2"> АБО ЦЕЙ</label>
-                        <label><input type="radio" name="q_fish_3" value="3"> АБО ЦЕЙ ТРЕТІЙ ВАРІАНТ</label>
+                        <label><input type="radio" name="q3_field" value="tech"> ТЕХНІЧНА</label>
+                        <label><input type="radio" name="q3_field" value="humanities"> ГУМАНІТАРНА</label>
+                        <label><input type="radio" name="q3_field" value="creative"> ТВОРЧА</label>
+                        <label><input type="radio" name="q3_field" value="management"> МЕНЕДЖМЕНТ</label>
+                        <label><input type="radio" name="q3_field" value="student"> СТУДЕНТ</label>
+                        <label><input type="radio" name="q3_field" value="other"> ІНШЕ</label>
                     </div>
                 </div>
-                
+
+                <div class="question-block">
+                    <label class="question-label">4. НАСКІЛЬКИ МУЗИКА ВАЖЛИВА У ВАШОМУ ЖИТТІ?</label>
+                    <div class="options">
+                        <label><input type="radio" name="q4_importance" value="1"> 1 (ЗОВСІМ НЕВАЖЛИВА)</label>
+                        <label><input type="radio" name="q4_importance" value="2"> 2</label>
+                        <label><input type="radio" name="q4_importance" value="3"> 3 (НЕЙТРАЛЬНО)</label>
+                        <label><input type="radio" name="q4_importance" value="4"> 4</label>
+                        <label><input type="radio" name="q4_importance" value="5"> 5 (НАДЗВИЧАЙНО ВАЖЛИВА)</label>
+                    </div>
                 </div>
+
+                <div class="question-block">
+                    <label class="question-label">5. ЯК ВИ ЗАЗВИЧАЙ ПОЧУВАЄТЕСЯ У ВЕЛИКІЙ КОМПАНІЇ НЕЗНАЙОМЦІВ?</label>
+                    <div class="options">
+                        <label><input type="radio" name="q5_company" value="enjoy"> НАСОЛОДЖУЮСЯ УВАГОЮ</label>
+                        <label><input type="radio" name="q5_company" value="comfort"> КОМФОРТНО</label>
+                        <label><input type="radio" name="q5_company" value="unsure"> НЕВПЕВНЕНО</label>
+                        <label><input type="radio" name="q5_company" value="leave"> ХОЧУ ПІТИ</label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <label class="question-label">6. ПРИЙМАЮЧИ РІШЕННЯ, ВИ БІЛЬШЕ ПОКЛАДАЄТЕСЬ НА:</label>
+                    <div class="options">
+                        <label><input type="radio" name="q6_decision" value="logic"> ЛОГІКУ ТА ФАКТИ</label>
+                        <label><input type="radio" name="q6_decision" value="intuition"> ПОЧУТТЯ ТА ІНТУЇЦІЮ</label>
+                        <label><input type="radio" name="q6_decision" value="balance"> БАЛАНС ОБОХ</label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <label class="question-label">7. ЯК ВИ СТАВИТЕСЬ ДО РАПТОВИХ ЗМІН У ПЛАНАХ?</label>
+                    <div class="options">
+                        <label><input type="radio" name="q7_changes" value="love"> ОБОЖНЮЮ СПОНТАННІСТЬ</label>
+                        <label><input type="radio" name="q7_changes" value="adapt"> ЛЕГКО АДАПТУЮСЯ</label>
+                        <label><input type="radio" name="q7_changes" value="discomfort"> ВІДЧУВАЮ ДИСКОМФОРТ</label>
+                        <label><input type="radio" name="q7_changes" value="hate"> МЕНЕ ЦЕ ДРАТУЄ</label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <label class="question-label">8. ВИ Б ОПИСАЛИ СЕБЕ ЯК ЛЮДИНУ ПЕРЕВАЖНО:</label>
+                    <div class="options">
+                        <label><input type="radio" name="q8_outlook" value="optimist"> ОПТИМІСТИЧНУ</label>
+                        <label><input type="radio" name="q8_outlook" value="realist"> РЕАЛІСТИЧНУ</label>
+                        <label><input type="radio" name="q8_outlook" value="pessimist"> ПЕСИМІСТИЧНУ</label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <label class="question-label">9. НАСКІЛЬКИ ВИ ВІДКРИТІ ДО НОВОГО ДОСВІДУ (ЇЖА, МІСЦЯ)?</label>
+                    <div class="options">
+                        <label><input type="radio" name="q9_openness" value="1"> 1 (КОНСЕРВАТОР)</label>
+                        <label><input type="radio" name="q9_openness" value="2"> 2</label>
+                        <label><input type="radio" name="q9_openness" value="3"> 3</label>
+                        <label><input type="radio" name="q9_openness" value="4"> 4</label>
+                        <label><input type="radio" name="q9_openness" value="5"> 5 (ШУКАЧ ПРИГОД)</label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <label class="question-label">10. ОБЕРІТЬ, ЩО ВАМ БЛИЖЧЕ:</label>
+                    <div class="options">
+                        <label><input type="radio" name="q10_order" value="plan"> ЧІТКИЙ ПЛАН І ПОРЯДОК</label>
+                        <label><input type="radio" name="q10_order" value="chaos"> ТВОРЧИЙ БЕЗЛАД ТА ГНУЧКІСТЬ</label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <label class="question-label">11. ПІСЛЯ НАСИЧЕНОГО СПІЛКУВАННЯМ ДНЯ, ВИ:</label>
+                    <div class="options">
+                        <label><input type="radio" name="q11_energy" value="energized"> ВІДЧУВАЄТЕ ПРИЛИВ ЕНЕРГІЇ</label>
+                        <label><input type="radio" name="q11_energy" value="drained"> ПОТРЕБУЄТЕ ЧАСУ НА САМОТІ</label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <label class="question-label">12. ЧИ СХИЛЬНІ ВИ ДО ГЛИБОКОГО АНАЛІЗУ (КНИГ, ФІЛЬМІВ)?</label>
+                    <div class="options">
+                        <label><input type="radio" name="q12_analysis" value="always"> ТАК, ЗАВЖДИ</label>
+                        <label><input type="radio" name="q12_analysis" value="sometimes"> ІНОДІ</label>
+                        <label><input type="radio" name="q12_analysis" value="rarely"> РІДКО</label>
+                        <label><input type="radio" name="q12_analysis" value="never"> НІ, СПРИЙМАЮ ЯК Є</label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <label class="question-label">13. ЯКІ МУЗИЧНІ ЖАНРИ ВИ СЛУХАЄТЕ НАЙЧАСТІШЕ? (ОБЕРІТЬ ДО 3-Х)</label>
+                    <div class="options">
+                        <label><input type="checkbox" name="q13_genre" value="pop"> ПОП</label>
+                        <label><input type="checkbox" name="q13_genre" value="rock"> РОК / МЕТАЛ</label>
+                        <label><input type="checkbox" name="q13_genre" value="hiphop"> ХІП-ХОП / РЕП</label>
+                        <label><input type="checkbox" name="q13_genre" value="electronic"> ЕЛЕКТРОНІКА</label>
+                        <label><input type="checkbox" name="q13_genre" value="classical"> КЛАСИКА / ІНСТРУМЕНТАЛЬНА</label>
+                        <label><input type="checkbox" name="q13_genre" value="jazz"> ДЖАЗ / БЛЮЗ</label>
+                        <label><input type="checkbox" name="q13_genre" value="folk"> ФОЛК</label>
+                        <label><input type="checkbox" name="q13_genre" value="other"> ІНШЕ</label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <label class="question-label">14. ЩО ДЛЯ ВАС НАЙВАЖЛИВІШЕ У ПІСНІ?</label>
+                    <div class="options">
+                        <label><input type="radio" name="q14_song" value="lyrics"> ТЕКСТ І СЕНС</label>
+                        <label><input type="radio" name="q14_song" value="melody"> МЕЛОДІЯ І ГАРМОНІЯ</label>
+                        <label><input type="radio" name="q14_song" value="rhythm"> РИТМ І "КАЧ"</label>
+                        <label><input type="radio" name="q14_song" value="atmosphere"> ЗАГАЛЬНА АТМОСФЕРА</label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <label class="question-label">15. ЯК ВИ ЗАЗВИЧАЙ СЛУХАЄТЕ МУЗИКУ?</label>
+                    <div class="options">
+                        <label><input type="radio" name="q15_how" value="alone"> ПЕРЕВАЖНО НАОДИНЦІ (В НАВУШНИКАХ)</label>
+                        <label><input type="radio" name="q15_how" value="background"> ЯК ФОН ДЛЯ ІНШИХ СПРАВ</label>
+                        <label><input type="radio" name="q15_how" value="social"> У КОМПАНІЇ, НА ВЕЧІРКАХ</label>
+                        <label><input type="radio" name="q15_how" value="live"> НАЖИВО (КОНЦЕРТИ)</label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <label class="question-label">16. ЯКА МУЗИКА ВАМ ПОТРІБНА ДЛЯ КОНЦЕНТРАЦІЇ?</label>
+                    <div class="options">
+                        <label><input type="radio" name="q16_focus" value="silence"> ПОВНА ТИША</label>
+                        <label><input type="radio" name="q16_focus" value="instrumental"> СПОКІЙНА ІНСТРУМЕНТАЛЬНА (LO-FI, КЛАСИКА)</label>
+                        <label><input type="radio" name="q16_focus" value="energetic"> ЕНЕРГІЙНА ТА РИТМІЧНА</label>
+                        <label><input type="radio" name="q16_focus" value="any"> БУДЬ-ЯКА, ЩО ПОДОБАЄТЬСЯ</label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <label class="question-label">17. ЯК ВИ ЗНАХОДИТЕ НОВУ МУЗИКУ?</label>
+                    <div class="options">
+                        <label><input type="radio" name="q17_discover" value="services"> РЕКОМЕНДАЦІЇ СЕРВІСІВ (SPOTIFY, YOUTUBE)</label>
+                        <label><input type="radio" name="q17_discover" value="friends"> ПОРАДИ ДРУЗІВ</label>
+                        <label><input type="radio" name="q17_discover" value="search"> АКТИВНО ШУКАЮ НОВІ ГУРТИ/ЖАНРИ</label>
+                        <label><input type="radio" name="q17_discover" value="random"> ВИПАДКОВО НАТРАПЛЯЮ</label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <label class="question-label">18. НАСКІЛЬКИ ВАМ ВАЖЛИВО, ЩОБ ДРУЗІ ПОДІЛЯЛИ ВАШІ МУЗИЧНІ СМАКИ?</label>
+                    <div class="options">
+                        <label><input type="radio" name="q18_friends" value="1"> 1 (ЗОВСІМ НЕВАЖЛИВО)</label>
+                        <label><input type="radio" name="q18_friends" value="2"> 2</label>
+                        <label><input type="radio" name="q18_friends" value="3"> 3</label>
+                        <label><input type="radio" name="q18_friends" value="4"> 4</label>
+                        <label><input type="radio" name="q18_friends" value="5"> 5 (ДУЖЕ ВАЖЛИВО)</label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <label class="question-label">19. ОБЕРІТЬ ТВЕРДЖЕННЯ, ЯКЕ НАЙКРАЩЕ ОПИСУЄ ВАШЕ СТАВЛЕННЯ ДО МУЗИКИ:</label>
+                    <div class="options">
+                        <label><input type="radio" name="q19_attitude" value="energy"> "МУЗИКА - ЦЕ ЕНЕРГІЯ ТА РОЗВАГА"</label>
+                        <label><input type="radio" name="q19_attitude" value="escape"> "МУЗИКА - ЦЕ СПОСІБ ВТЕКТИ ВІД РЕАЛЬНОСТІ"</label>
+                        <label><input type="radio" name="q19_attitude" value="intellect"> "МУЗИКА - ЦЕ ІНТЕЛЕКТУАЛЬНЕ ЗАДОВОЛЕННЯ"</label>
+                        <label><input type="radio" name="q19_attitude" value="soundtrack"> "МУЗИКА - ЦЕ САУНДТРЕК МОЇХ ЕМОЦІЙ"</label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <label class="question-label">20. ЯКА СКЛАДНІСТЬ МУЗИКИ ВАМ ПОДОБАЄТЬСЯ НАЙБІЛЬШЕ?</label>
+                    <div class="options">
+                        <label><input type="radio" name="q20_complexity" value="simple"> ПРОСТІ, ЗАПАМ'ЯТОВУЮЧІ МЕЛОДІЇ</label>
+                        <label><input type="radio" name="q20_complexity" value="complex"> СКЛАДНІ, НЕПЕРЕДБАЧУВАНІ КОМПОЗИЦІЇ</label>
+                        <label><input type="radio" name="q20_complexity" value="balance"> БАЛАНС ПРОСТОТИ ТА СКЛАДНОСТІ</label>
+                    </div>
+                </div>
+
+
+            </div>
             
             <button type="submit" class="submit-btn">Завершити опитування</button>
         </form>
     </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>

@@ -4,7 +4,6 @@
 }
 
 body {
-    /* Стиль з картинки: чорно-білий, мінімалізм */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background-color: #ffffff;
     color: #000000;
@@ -15,26 +14,24 @@ body {
 
 /* --- Контейнер опитування --- */
 .container {
-    max-width: 900px; /* Трохи ширше для цього стилю */
+    max-width: 900px;
     margin: 0 auto;
-    padding: 0 20px; /* Лише бокові відступи */
+    padding: 0 20px;
     background-color: #ffffff;
-    /* Прибираємо тіні та заокруглення */
     box-shadow: none;
     border-radius: 0;
 }
 
 /* --- Шапка (Заголовок та опис) --- */
 header {
-    text-align: left; /* В оригіналі текст переважно зліва */
-    border-bottom: 2px solid #000; /* Ключова лінія */
+    text-align: left;
+    border-bottom: 2px solid #000;
     padding: 40px 0;
     margin-bottom: 0;
 }
 
 h1 {
-    /* Великий, жирний, ВЕЛИКІ ЛІТЕРИ */
-    font-size: clamp(2.5rem, 5vw, 4rem); /* Адаптивний розмір */
+    font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 900;
     text-transform: uppercase;
     color: #000;
@@ -44,7 +41,6 @@ h1 {
 }
 
 .description {
-    /* Опис також ВЕЛИКИМИ ЛІТЕРАМИ, але менший */
     font-size: 1rem;
     color: #000;
     text-transform: uppercase;
@@ -53,9 +49,8 @@ h1 {
 }
 
 #quiz-form {
-    /* Додаємо верхню лінію, щоб відділити від шапки */
     border-top: 2px solid #000;
-    margin-top: -2px; /* Компенсація подвійної лінії, щоб вона виглядала як одна */
+    margin-top: -2px;
 }
 
 /* --- Кнопка відправки --- */
@@ -66,63 +61,61 @@ h1 {
     font-size: 1.2rem;
     font-weight: 700;
     color: #fff;
-    background-color: #000; /* Чорна кнопка */
+    background-color: #000;
     border: none;
-    border-radius: 0; /* Гострі кути */
+    border-radius: 0;
     cursor: pointer;
-    margin-top: 0; /* Прибираємо відступ */
+    margin-top: 0;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    border-top: 2px solid #000; /* Лінія над кнопкою */
+    border-top: 2px solid #000;
 }
 
 .submit-btn:hover {
-    background-color: #fff; /* Інверсія при наведенні */
+    background-color: #fff;
     color: #000;
-    border-top: 2px solid #000; /* Зберігаємо лінію */
+    border-top: 2px solid #000;
 }
 
 /* --- Стилі для питань --- */
 .question-block {
     margin: 0;
-    padding: 30px 0; /* Вертикальні відступи */
+    padding: 30px 0;
     background-color: transparent;
     border: none;
     border-radius: 0;
-    /* Кожне питання відділене лінією знизу */
     border-bottom: 2px solid #000;
 }
 
 .question-label {
     display: block;
-    font-size: 1.5rem; /* Збільшуємо шрифт питання */
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 20px;
-    text-transform: uppercase; /* Великі літери */
+    text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
 .options label {
     display: block;
     font-size: 1rem;
-    padding: 12px 0; /* Простіший відступ */
+    padding: 12px 0;
     margin-bottom: 5px;
-    background-color: transparent; /* Без фону */
+    background-color: transparent;
     border-radius: 0;
     cursor: pointer;
     transition: background-color 0.2s;
-    text-transform: uppercase; /* Великі літери */
+    text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
 .options label:hover {
-    background-color: #f0f0f0; /* Дуже легкий ховер */
+    background-color: #f0f0f0;
 }
 
 .options input[type="radio"],
 .options input[type="checkbox"] {
     margin-right: 12px;
-    /* Робимо радіокнопки стильнішими */
     transform: scale(1.2);
 }
